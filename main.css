@@ -1,7 +1,6 @@
 body {
   color: #333;
-  font-family: 'Gibson', 'Helvetica Neue';
-  font-weight: 300;
+  font-family: 'Gibson', 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -13,6 +12,7 @@ body {
 }
 
 .top__wrapper {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100vh;
   padding-top: 120px;
@@ -24,6 +24,7 @@ body {
 .top__header {
   clear: both;
   overflow: hidden;
+
   width: 90%;
   margin: 0 auto;
   padding-top: 20px;
@@ -51,35 +52,38 @@ body {
 }
 
 .top__sub-header {
-  font-size: 18px;
   margin: 35px auto;
+
   color: #333;
+  font-size: 18px;
   text-align: center;
 }
 
 .top__sub-header .top__offset--serif {
-  font-size: 15px;
   margin-right: 3px;
+  font-size: 15px;
 }
 
 .top__sub-header--small {
-  font-size: 16px;
-  margin: 0 auto;
-  color: #555;
   display: block;
+  margin: 0 auto;
+
+  color: #555;
+  font-size: 16px;
   text-align: center;
 }
 
 .top__list {
-  list-style-type: none;
-  background: rgba(0,0,0,.09);
-  padding: 20px;
   margin-top: 40px;
+  padding: 20px;
+  list-style-type: none;
+
+  background: rgba(0,0,0,.09);
 }
 
 .top__list--item {
-  font-weight: 300;
   font-size: 19px;
+  font-weight: 300;
 }
 
 .top__sign-up {
@@ -125,6 +129,7 @@ body {
   display: block;
   width: 24px;
   margin: 0 auto;
+
   -webkit-animation: pulse 2s infinite; /* Safari 4+ */
   -moz-animation:    pulse 2s infinite; /* Fx 5+ */
   -o-animation:      pulse 2s infinite; /* Opera 12+ */
@@ -134,9 +139,10 @@ body {
 /* Random panel specific hacks */
 
 .panel__wrapper--third {
-  margin-top: 28px;
   clear: both;
   overflow: hidden;
+
+  margin-top: 28px;
 }
 
 .panel__wrapper--forth {
@@ -154,32 +160,34 @@ body {
 .panel__background--top {
   top: 0;
   left: 80%;
-  border-left: 2px solid #D1D6DA;
-  margin-left: -1px;
   height: 170px;
+  margin-left: -1px;
+
+  border-left: 2px solid #D1D6DA;
 }
 
 .panel__background--horizontal {
   width: 50%;
   float: right;
-  right: calc(5% - 2px);
-  border-top: 2px solid #D1D6DA;
   top: 28px;
-  height: 1px;
+  right: calc(5% - 2px);
+
+  border-top: 2px solid #D1D6DA;
 }
 
 .panel__background--vertical {
-  top: 28px;
   width: 50%;
+  top: 28px;
   left: calc(45% + 1px);
-  border-left: 2px solid #D1D6DA;
   margin-left: -1px;
+
+  border-left: 2px solid #D1D6DA;
 }
 
 .schedule__header {
-  padding: 0;
   display: block;
   margin-top: -105px;
+  padding: 0;
 
   font-size: 32px;
   font-weight: 600;
@@ -187,9 +195,10 @@ body {
 }
 
 .schedule__list-header {
-  display: block;
   clear: both;
   overflow: hidden;
+
+  display: block;
   margin-bottom: 20px;
   margin-left: 40px;
   padding-top: 35px;
@@ -228,6 +237,7 @@ body {
   height: 10px;
   margin-top: 6px;
   margin-left: -48px;
+
   background: #fff;
   border: 2px solid #D1D6DA;
   border-radius: 50%;
@@ -259,13 +269,15 @@ body {
 .map__box--gradient {
   clear: both;
   overflow: hidden;
-  position: relative;
-  min-height: 470px;
+
   width: 100%;
+  min-height: 470px;
   top: -507px;
+  position: relative;
   z-index: 9999;
+
+  background: linear-gradient(rgba(142,158,171,.3), rgba(238,242,243,.3));
   border-bottom: 30px solid #fff;
-  background: linear-gradient(rgba(142,158,171,.3), rgba(238,242,243,.3)); 
 }
 
 .map__text {
@@ -325,9 +337,9 @@ iframe {
 }
 
 .pricing__block--left-top {
-  margin-top: -2px;
-  z-index: 9999;
   position: relative;
+  z-index: 9999;
+  margin-top: -2px;
   padding-top: 100px  ;
 }
 
@@ -347,6 +359,7 @@ iframe {
   height: 14px;
   margin-top: 55px;
   margin-left: -10px;
+
   background: #fff;
   border: 2px solid #D1D6DA;
   border-radius: 50%;
@@ -360,6 +373,7 @@ iframe {
   height: 14px;
   margin-top: 55px;
   margin-right: -10px;
+
   background: #fff;
   border: 2px solid #D1D6DA;
   border-radius: 50%;
@@ -389,8 +403,8 @@ iframe {
 }
 
 .pricing__list-description {
-  font-size: 18px;
   padding-right: 40px;
+  font-size: 18px;
 }
 
 .pricing__block--right .pricing__list-description {
@@ -398,9 +412,9 @@ iframe {
 }
 
 .pricing__list {
-  list-style-type: disc;
-  padding-left: 25px;
   margin-top: 35px;
+  padding-left: 25px;
+  list-style-type: disc;
 }
 
 .pricing__block--right .pricing__list {
@@ -418,8 +432,3 @@ iframe {
 .pricing__list-item:last-child {
   margin-bottom: 0;
 }
-
-
-
-
-
