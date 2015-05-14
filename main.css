@@ -1,7 +1,7 @@
 body {
   color: #333;
   font-family: 'Gibson', 'Helvetica Neue';
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -31,7 +31,7 @@ body {
   color: #333;
   font-family: 'Gibson';
   font-size: 72px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.25;
   text-align: center;
 
@@ -314,40 +314,21 @@ iframe {
 /* Pricing Panel */
 
 .pricing__block--left {
-  margin-top: -1px;
-  padding-right: 10%;
-  margin-right: calc(4.5% - 1px);
+  margin-top: -2px;
+  margin-right: 19px;
   border-right: 2px solid #D1D6DA;
 }
 
 .pricing__block--right {
-  padding-left: 10%;
-  margin-left: calc(-8% - 2px);
+  margin-left: -41px;
   border-left: 2px solid #D1D6DA;
 }
 
-.panel__alt-background {
-  display: block;
-  position: relative;
-}
-
-.panel__alt-background--top {
+.pricing__block--left-top {
+  margin-top: -2px;
   z-index: 9999;
-  top: -2px;
-  left: 46.9%;
-  border-left: 2px solid #D1D6DA;
-  margin-left: -1px;
-  height: 120px;
-}
-
-.pricing__header {
-  padding: 0;
-  display: block;
-  margin-top: -105px;
-
-  font-size: 32px;
-  font-weight: 600;
-  text-align: center;
+  position: relative;
+  padding-top: 100px  ;
 }
 
 .pricing__list-header {
@@ -365,7 +346,7 @@ iframe {
   width: 14px;
   height: 14px;
   margin-top: 55px;
-  margin-left: -65px;
+  margin-left: -10px;
   background: #fff;
   border: 2px solid #D1D6DA;
   border-radius: 50%;
@@ -378,7 +359,7 @@ iframe {
   width: 14px;
   height: 14px;
   margin-top: 55px;
-  margin-right: -66px;
+  margin-right: -10px;
   background: #fff;
   border: 2px solid #D1D6DA;
   border-radius: 50%;
@@ -391,6 +372,10 @@ iframe {
   font-weight: 600;
 }
 
+.pricing__block--right .pricing__list-header {
+  padding-left: 60px;
+}
+
 .pricing__list-subhead {
   margin: 0;
 
@@ -399,14 +384,27 @@ iframe {
   font-weight: 600;
 }
 
+.pricing__block--right .pricing__list-subhead {
+  padding-left: 60px;
+}
+
 .pricing__list-description {
   font-size: 18px;
+  padding-right: 40px;
+}
+
+.pricing__block--right .pricing__list-description {
+  padding-left: 60px;
 }
 
 .pricing__list {
   list-style-type: disc;
   padding-left: 25px;
   margin-top: 35px;
+}
+
+.pricing__block--right .pricing__list {
+  padding-left: 85px;
 }
 
 .pricing__list-item {
