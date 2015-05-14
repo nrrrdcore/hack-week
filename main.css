@@ -1,9 +1,14 @@
 body {
   color: #333;
-  font-family: 'Gibson', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Gibson-Light', 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+}
+
+i {
+  font-family: 'Gibson-Light';
+  font-weight: 300;
 }
 
 .grid {
@@ -32,7 +37,7 @@ body {
   color: #333;
   font-family: 'Gibson';
   font-size: 72px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   text-align: center;
 
@@ -42,6 +47,7 @@ body {
 .top__offset--serif {
   color: #555;
   font-family: 'Merriweather', serif;
+  font-size: 14px;
 }
 
 .top__offset--green {
